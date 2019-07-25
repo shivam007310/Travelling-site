@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Travel with Shivam</title>
+   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel = "icon" href =  
+"https://www.geeksforgeeks.org/wp-content/uploads/gfg_200X200.png" 
+        type = "image/x-icon">   <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	 <style>
+  /* Make the image fully responsive */
+  .carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
+</style>
+<style>
+body {
+  background-color: white;
+  font-family: cursive;
+
+}
+
+.glow {
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #ccebff, 0 0 20px #ccebff, 0 0 30px #ccebff, 0 0 40px #ccebff, 0 0 50px #ccebff, 0 0 60px #ccebff, 0 0 70px #ccebff;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #4db8ff, 0 0 30px #4db8ff, 0 0 40px #4db8ff, 0 0 50px #4db8ff, 0 0 60px #4db8ff, 0 0 70px #4db8ff, 0 0 80px #4db8ff;
+  }
+}
+</style>
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
+</style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand glow" href="#"><img src="download.png" alt="Logo" style="width:40px;">  Travel with Shivam</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto nav-pills">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link </a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Travels
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Kaza</a>
+          <a class="dropdown-item" href="#">Kinnaur</a>
+          <div class="dropdown-divider">Mandi</div>
+          <a class="dropdown-item" href="#">Bijli Mahadev</a>
+        </div>
+      </li>
+    
+    </ul>
+  </div>
+</nav>
+<section> 
+  <div>
+<div id="demo" class="carousel slide" data-ride="carousel">
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="1.jpg" alt="Los Angeles" width="500" height="550" class="img-fluid " >
+      <div class="carousel-caption">
+        <h3>Los Angeles</h3>
+        <p>We had such a great time in LA!</p>
+      </div>   
+    </div>     
+<div class="carousel-item">
+      <img src="2.jpg" alt="Chicago" width="500" height="550">
+      <div class="carousel-caption">
+        <h3>Chicago</h3>
+        <p>Thank you, Chicago!</p>
+      </div>   
+    </div>
+    <div class="carousel-item">
+      <img src="3.jpg" alt="New York" width="500" height="550">
+      <div class="carousel-caption">
+        <h3>New York</h3>
+        <p>We love the Big Apple!</p>
+      </div>   
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+</div>
+</section>
+<!-- /header -->
+<section>
+    <div class="container-fluid">
+    	<h1 class="text-center text-capitalize  pt-3">about us</h1>
+    	<hr class="w-25 mx-auto pb-3">
+    <div class="row">
+    	<div class="col-lg-6 col-md-6 col-12 pb-5">
+    		<img src="1.jpg" class="img-fluid" width="700" height="200">
+    	</div>
+    <div class="col-lg-6 col-md-6 col-12 pb-5" >
+
+    	<h1>Who am I?</h1>
+    	<hr>
+    	<p>
+    		My name is Shivam Rana. I am from Palampur, Himachal Pradesh. I am a student of B.Tech(CSE). As this is a travelling blog .So, I won't be sharing much about myself. I like travelling around. I have visited almost all corners of Himachal Pradesh and also did some treks in Himachal Pradesh and Uttarakhand. I want to say to the readers, cut out some time from your hectic schedules. And come and visit Himachal Pradesh for once. I am sure you won't regret doing this.
+    	</p>
+         <a href="https://www.google.com" class="btn btn-info" role="button">Know more</a>    	
+     </div>
+   </div>
+    	 </div>
+	
+</section>
+<section>
+      <div class="container-fluid">
+        <h1 class="text-center pt-3">Treks</h1>
+        <hr class="w-25 mx-auto pb-3">
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-12"><div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="3.jpg" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>Dhankar Lake</h1> 
+      <p>Situated in Spitir</p> 
+      <p>It was a blissful experience</p>
+      <a href="file:///C:/xampp/htdocs/kaza.html" class="btn btn-primary">Explore</a>
+    </div>
+
+  </div>
+</div>
+</div>
+          <div class="col-lg-4 col-md-4 col-12"><div class="flip-card">
+            <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="2.jpg" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>Dhankar Lake</h1> 
+      <p>Situated in Spitir</p> 
+      <p>It was a blissful experience</p>
+      <a href="file:///C:/xampp/htdocs/kaza.html" class="btn btn-primary">Explore</a>
+    </div>
+
+  </div></div></div>
+          <div class="col-lg-4 col-md-4 col-12">
+            <div class="flip-card"> 
+              <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="1.jpg" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>Dhankar Lake</h1> 
+      <p>Situated in Spitir</p> 
+      <p>It was a blissful experience</p>
+      <a href="file:///C:/xampp/htdocs/kaza.html" class="btn btn-primary">Explore</a>
+    </div>
+
+  </div>
+      </div> 
+      </div></div>
+        <div class="container-fluid pt-3">
+          <div class="jumbotron pb-3">
+          <h1>Contact Us</h1> 
+  <p>+91 821*****61</p> 
+</div>
+        </div>
+  
+</section>
+</body>
+</html>
